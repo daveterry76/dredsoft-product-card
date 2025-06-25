@@ -13,7 +13,7 @@ export default function App() {
           price: data.price,
           image: data.image,
           variants: ["Small", "Medium", "Large"],
-          inStock: data.rating.count < 0,
+          inStock: data.rating.count > 0,
         };
 
         setTimeout(() => {
